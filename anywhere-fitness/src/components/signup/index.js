@@ -33,17 +33,19 @@ const SignUp = () => {
   function handleClick(e) {
     e.preventDefault()
     console.log(formFields)
-    
-    redirectToWalkthrough()
 
-    // axios.post('https://anywhere-fitness-01.herokuapp.com/api/auth/register', formFields)
-    //   .then(resp => {
-    //     console.log(resp)
-    //   })
-    //   .catch(error => {
-    //     console.log(error)
-    //   })
+    axios.post('https://anywhere-fitness-01.herokuapp.com/api/auth/register', formFields)
+      .then(resp => {
+        console.log(resp)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+      .finally(() => {
+        redirectToWalkthrough()
+      })
   }
+
   return (
     <>
       <SignupWrapper>
