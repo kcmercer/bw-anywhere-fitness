@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 //Styling Imports
@@ -16,6 +17,12 @@ const SignUp = () => {
     role:"",
   });
 
+  const navigate = useNavigate()
+
+  const redirectToWalkthrough = () => {
+    navigate('/walkthrough')
+  }
+
   function handleInputChange(e) {
     setFormFields((state) => ({
       ...state,
@@ -24,8 +31,10 @@ const SignUp = () => {
   }
 
   function handleClick(e) {
-    e.preventDefault();
-    console.log(formFields);
+    e.preventDefault()
+    console.log(formFields)
+    
+    redirectToWalkthrough()
 
     // axios.post('https://anywhere-fitness-01.herokuapp.com/api/auth/register', formFields)
     //   .then(resp => {
