@@ -95,11 +95,9 @@ const ClassList = () => {
     <>
     <h1> Start your fitness journey off right!</h1>
       <ListWrapper>
-
           {classes.map(course => {
-            return <Class key={course.name} course={course} />
+            return <Class key={course.class_id} course={course} />
             })}
-
       </ListWrapper>
       
       <ListButton onClick={handleClick}>Add a class!</ListButton>

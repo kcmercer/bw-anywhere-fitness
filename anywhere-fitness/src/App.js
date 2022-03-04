@@ -17,23 +17,23 @@ function App() {
   return (
     <div className='App'>
       <NavBar />
-      <Routes>
-        <Route exact path ='/' element={<Login />} />
-        <Route exact path ='/login' element={<Login />} />
-        <Route exact path ='/signup' element={<SignUp />} />
-        <Route exact path='/walkthrough' element={<PrivateRoute />}>
-          <Route exact path='/walkthrough' element={<Walkthrough />}/>
-        </Route>
-        {/* <Route exact path='/classes' element={<PrivateRoute />}> */}
-          <Route exact path='/classes' element={<ClassList />}/>
-        {/* </Route> */}
-        <Route exact path='/logout' element={<PrivateRoute />}>
-          <Route exact path='/logout' element={<Logout />}/>
-        </Route>
-        {/* <Route exact path='/addclass' element={<PrivateRoute />}> */}
-          <Route exact path='/addclass' element={<AddClass />}/>
-        {/* </Route> */}
-      </Routes>
+        <Routes>
+          <Route exact path ='/' element={<Login />} />
+          <Route exact path ='/login' element={<Login />} />
+          <Route exact path ='/signup' element={<SignUp />} />
+          <Route exact path='/walkthrough' element={<PrivateRoute />}>
+            <Route exact path='/walkthrough' element={<Walkthrough />}/>
+          </Route>
+          {/* <Route exact path='/classes' element={<PrivateRoute />}> */}
+            <Route exact path='/classes' element={<ClassList />}/>
+          {/* </Route> */}
+          <Route exact path='/logout' element={<PrivateRoute />}>
+            <Route exact path='/logout' element={<Logout />}/>
+          </Route>
+          {/* <Route exact path='/addclass' element={<PrivateRoute />}> */}
+            <Route exact path='/addclass' element={<AddClass />}/>
+          {/* </Route> */}
+        </Routes>
     </div>
   );
 }
