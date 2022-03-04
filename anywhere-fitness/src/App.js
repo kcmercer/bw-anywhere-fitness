@@ -12,6 +12,7 @@ import Walkthrough from './components/walkthrough';
 import ClassList from './components/classList';
 import Logout from './components/login/logout';
 import AddClass from './components/classList/addClass';
+import EditClass from './components/classList/editClass';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
           </Route>
           {/* <Route exact path='/addclass' element={<PrivateRoute />}> */}
             <Route exact path='/addclass' element={<AddClass />}/>
+          {/* </Route> */}
+          {/* <Route exact path='/addclass' element={<PrivateRoute />}> */}
+            <Route exact path='/editclass' element={<EditClass />}/>
           {/* </Route> */}
         </Routes>
     </div>
