@@ -9,6 +9,11 @@ export const LoginWrapper = styled.div`
   align-items: center;
 `;
 
+export const BackgroundWrapper = styled.div`
+  width: 100%;
+  background-color: #41B3A3;
+`;
+
 export const Form = styled.form`
   display: flex;
   min-width: 350px;

@@ -35,7 +35,8 @@ const Login = () => {
     }));
   }
 
-  // Kenneth, Mercer, Token 
+  // Kenneth, Mercer, Token (Client)
+  // Bloom, Tech, instructor (Instructor)
   function handleClick(e) {
     e.preventDefault();
     console.log(formFields)
