@@ -11,8 +11,7 @@ export const ClassWrapper = styled.div`
   padding: 1%;
   border: 2px solid black;
   border-radius: 15px;
-  background: #35baf6
-;
+  background: #35baf6;
 `;
 
 export const ClassH2 = styled.h2`
